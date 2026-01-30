@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex James Iphone Samsung Google pixel Filter Prompts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #007AFF;
+            --light-bg: #F5F5F7;
+            --light-text: #1D1D1F;
+            --light-card: rgba(255, 255, 255, 0.95);
+            --dark-bg: #000000;
+            --dark-text: #F5F5F7;
+            --dark-card: #1C1C1E;
+            --transition-speed: 0.4s;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-bg);
+            color: var(--light-text);
+            transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+            min-height: 100vh;
+        }
+        
+        body.dark-mode {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+        
+        /* iOS Spring Animation */
+        @keyframes springIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes subtlePulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+        
+        /* iOS Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* iOS-Style Menu */
+        .ios-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(245, 245, 247, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            z-index: 101;
+            display: none;
+            transform: translateY(-100%);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .dark-mode .ios-menu {
+            background: rgba(28, 28, 30, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .ios-menu.active {
+            transform: translateY(0);
+            display: block;
+            animation: menuSpringIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        @keyframes menuSpringIn {
+            0% {
+                transform: translateY(-100%) scale(0.9);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(0) scale(1.02);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .ios-menu-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px 20px;
+        }
+        
+        .ios-menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .ios-menu-item {
+            background: var(--light-card);
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dark-mode .ios-menu-item {
+            background: var(--dark-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .ios-menu-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
+        
+        .ios-menu-item:hover::after {
+            left: 100%;
+        }
+        
+        .ios-menu-item:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        
+        .ios-menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark-mode .ios-menu-item:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .ios-menu-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+        
+        .ios-menu-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .ios-menu-subtitle {
+            font-size: 12px;
+            color: #8E8E93;
+            opacity: 0.8;
+        }
+        
+        .dark-mode .ios-menu-subtitle {
+            color: #AEAEB2;
+        }
+        
+        /* Device-specific menu item colors */
+        .ios-menu-item[data-filter="all"] .ios-menu-icon {
+            color: #007AFF;
+        }
+        
+        .ios-menu-item[data-filter="iphone"] .ios-menu-icon {
+            color: #007AFF;
+        }
+        
+        .ios-menu-item[data-filter="iphone-15"] .ios-menu-icon {
+            color: #007AFF;
+        }
+        
+        .ios-menu-item[data-filter="samsung"] .ios-menu-icon {
+            color: #00C853;
+        }
+        
+        .ios-menu-item[data-filter="pixel"] .ios-menu-icon {
+            color: #4285F4;
+        }
+        
+        .ios-menu-item[data-filter="vivid"] .ios-menu-icon {
+            color: #FF2D55;
+        }
+        
+        .ios-menu-item[data-filter="dramatic"] .ios-menu-icon {
+            color: #5856D6;
+        }
+        
+        .ios-menu-item[data-filter="portrait"] .ios-menu-icon {
+            color: #34C759;
+        }
+        
+        .ios-menu-item.active {
+            background: var(--primary-blue);
+        }
+        
+        .ios-menu-item.active .ios-menu-icon,
+        .ios-menu-item.active .ios-menu-title,
+        .ios-menu-item.active .ios-menu-subtitle {
+            color: white;
+        }
+        
+        /* All Filters Button - Updated to Transparent with Icon */
+        .all-filters-btn {
+            position: fixed;
+            top: 20px;
+            right: 180px;
+            background: transparent;
+            border: none;
+            color: var(--primary-blue);
+            width: 50px;
+            height: 50px;
+            border-radius: 0;
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            z-index: 102;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: none;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .dark-mode .all-filters-btn {
+            color: #64D2FF;
+        }
+        
+        .all-filters-btn:hover {
+            transform: scale(1.1);
+            color: #0056CC;
+        }
+        
+        .dark-mode .all-filters-btn:hover {
+            color: #5AC8FA;
+        }
+        
+        .all-filters-btn:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+        
+        .all-filters-btn.active {
+            color: #34C759;
+            transform: scale(1.1);
+        }
+        
+        .dark-mode .all-filters-btn.active {
+            color: #30D158;
+        }
+        
+        /* Lock Button Styles */
+        .lock-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            border: none;
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .dark-mode .lock-button {
+            background: linear-gradient(135deg, #64D2FF, #5AC8FA);
+            box-shadow: 0 8px 20px rgba(100, 210, 255, 0.3);
+        }
+        
+        .lock-button:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 122, 255, 0.4);
+        }
+        
+        .lock-button:active {
+            transform: scale(0.95) translateY(0);
+            transition: all 0.1s ease;
+        }
+        
+        .lock-button.pulsing {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 122, 255, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(0, 122, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 122, 255, 0);
+            }
+        }
+        
+        .dark-mode .lock-button.pulsing {
+            animation: pulse-dark 2s infinite;
+        }
+        
+        @keyframes pulse-dark {
+            0% {
+                box-shadow: 0 0 0 0 rgba(100, 210, 255, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(100, 210, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(100, 210, 255, 0);
+            }
+        }
+        
+        /* Lock Overlay Styles */
+        .lock-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background-color: rgba(245, 245, 247, 0.95);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all var(--transition-speed) ease;
+            animation: fadeInUp 0.5s ease-out;
+        }
+        
+        .dark-mode .lock-overlay {
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+        
+        .lock-overlay.active {
+            display: flex;
+        }
+        
+        .lock-screen-content {
+            text-align: center;
+            padding: 50px;
+            max-width: 500px;
+            width: 90%;
+            background-color: var(--light-card);
+            border-radius: 28px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.2s;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .dark-mode .lock-screen-content {
+            background-color: var(--dark-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+        }
+        
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .lock-icon {
+            font-size: 80px;
+            margin-bottom: 25px;
+            color: var(--primary-blue);
+            animation: subtlePulse 3s infinite ease-in-out;
+        }
+        
+        .lock-title {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+        }
+        
+        .dark-mode .lock-title {
+            background: linear-gradient(135deg, #64D2FF, #5AC8FA);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .lock-message {
+            font-size: 18px;
+            color: #8E8E93;
+            margin-bottom: 35px;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+        
+        .unlock-button {
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            color: white;
+            border: none;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto;
+            box-shadow: 0 10px 25px rgba(0, 122, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .unlock-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
+        
+        .unlock-button:hover::after {
+            left: 100%;
+        }
+        
+        .dark-mode .unlock-button {
+            background: linear-gradient(135deg, #64D2FF, #5AC8FA);
+            box-shadow: 0 10px 25px rgba(100, 210, 255, 0.3);
+        }
+        
+        .unlock-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 122, 255, 0.4);
+        }
+        
+        /* Body Locked State */
+        body.locked {
+            overflow: hidden;
+        }
+        
+        /* Glassmorphism Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background-color: rgba(245, 245, 247, 0.85);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            z-index: 100;
+            transition: all var(--transition-speed) ease;
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .dark-mode header {
+            background-color: rgba(28, 28, 30, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .logo-icon {
+            font-size: 28px;
+            color: var(--primary-blue);
+            animation: subtlePulse 4s infinite ease-in-out;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .dark-mode .logo-text {
+            background: linear-gradient(135deg, #64D2FF, #5AC8FA);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Dark Mode Toggle - iOS Style */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .toggle-label {
+            font-size: 14px;
+            font-weight: 600;
+            transition: color var(--transition-speed) ease;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .dark-mode .toggle-label {
+            background: linear-gradient(135deg, #64D2FF, #5AC8FA);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .toggle-switch {
+            width: 52px;
+            height: 32px;
+            background-color: #E5E5EA;
+            border-radius: 16px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark-mode .toggle-switch {
+            background-color: #3A3A3C;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* ON state - Green background */
+        .toggle-switch.on {
+            background-color: #34C759;
+        }
+        
+        .dark-mode .toggle-switch.on {
+            background-color: #30D158;
+        }
+        
+        .toggle-switch::before {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: white;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+        
+        .dark-mode .toggle-switch::before {
+            background-color: #F5F5F7;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .toggle-switch.on::before {
+            transform: translateX(20px);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 40px 60px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 70px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #007AFF, #5856D6, #FF2D55);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: subtlePulse 5s infinite ease-in-out;
+        }
+        
+        .dark-mode .hero h1 {
+            background: linear-gradient(135deg, #64D2FF, #5AC8FA, #FF375F);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #8E8E93;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .dark-mode .hero p {
+            color: #8E8E93;
+        }
+        
+        /* iOS-style Filter Categories */
+        .category-title {
+            font-size: 34px;
+            font-weight: 800;
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.6s ease-out;
+            letter-spacing: -0.5px;
+        }
+        
+        .dark-mode .category-title {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .category-icon {
+            color: var(--primary-blue);
+            animation: subtlePulse 3s infinite ease-in-out;
+        }
+
+        /* Device-specific category colors */
+        .category-title.iphone {
+            border-bottom: 2px solid rgba(0, 122, 255, 0.3);
+        }
+        
+        .category-title.samsung {
+            border-bottom: 2px solid rgba(0, 200, 83, 0.3);
+        }
+        
+        .category-title.pixel {
+            border-bottom: 2px solid rgba(66, 133, 244, 0.3);
+        }
+        
+        /* Device-specific icons */
+        .category-icon.iphone {
+            color: #007AFF;
+        }
+        
+        .category-icon.samsung {
+            color: #00C853;
+        }
+        
+        .category-icon.pixel {
+            color: #4285F4;
+        }
+        
+        /* Device-specific prompt type badges */
+        .prompt-type.iphone {
+            background-color: rgba(0, 122, 255, 0.15);
+            color: #007AFF;
+            font-weight: 700;
+        }
+        
+        .prompt-type.samsung {
+            background-color: rgba(0, 200, 83, 0.15);
+            color: #00C853;
+            font-weight: 700;
+        }
+        
+        .prompt-type.pixel {
+            background-color: rgba(66, 133, 244, 0.15);
+            color: #4285F4;
+            font-weight: 700;
+        }
+        
+        /* iOS-style Prompt Cards */
+        .prompts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 28px;
+            margin-bottom: 70px;
+        }
+        
+        .prompt-card {
+            background-color: var(--light-card);
+            border-radius: 22px;
+            padding: 28px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: springIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .prompt-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .dark-mode .prompt-card {
+            background-color: var(--dark-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .prompt-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .dark-mode .prompt-card:hover {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+        }
+        
+        /* Staggered animation for cards */
+        .prompt-card:nth-child(1) { animation-delay: 0.1s; }
+        .prompt-card:nth-child(2) { animation-delay: 0.2s; }
+        .prompt-card:nth-child(3) { animation-delay: 0.3s; }
+        .prompt-card:nth-child(4) { animation-delay: 0.4s; }
+        .prompt-card:nth-child(5) { animation-delay: 0.5s; }
+        .prompt-card:nth-child(6) { animation-delay: 0.6s; }
+        .prompt-card:nth-child(7) { animation-delay: 0.7s; }
+        .prompt-card:nth-child(8) { animation-delay: 0.8s; }
+        
+        /* Device-specific card borders */
+        .prompt-card.iphone, 
+        .prompt-card.iphone-15 {
+            border-left: 5px solid #007AFF;
+        }
+        
+        .prompt-card.samsung {
+            border-left: 5px solid #00C853;
+        }
+        
+        .prompt-card.pixel {
+            border-left: 5px solid #4285F4;
+        }
+        
+        .prompt-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Prompt number removed - Now only device badge */
+        .prompt-type {
+            font-size: 14px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 50px;
+            letter-spacing: 0.5px;
+        }
+        
+        .prompt-title {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            color: var(--light-text);
+            letter-spacing: -0.3px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .dark-mode .prompt-title {
+            color: var(--dark-text);
+        }
+        
+        .prompt-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 25px;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .dark-mode .prompt-text {
+            color: #AEAEB2;
+        }
+        
+        .prompt-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .copy-btn {
+            background-color: rgba(0, 122, 255, 0.15);
+            color: var(--primary-blue);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .copy-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.7s ease;
+        }
+        
+        .copy-btn:hover::after {
+            left: 100%;
+        }
+        
+        .copy-btn:hover {
+            background-color: rgba(0, 122, 255, 0.25);
+            transform: scale(1.05);
+        }
+        
+        .copy-btn.copied {
+            background-color: #34C759;
+            color: white;
+            animation: springIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        /* iOS Copy Animation */
+        .copy-btn.copied i {
+            animation: checkmarkBounce 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        @keyframes checkmarkBounce {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.3);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        /* Device-specific copy buttons */
+        .prompt-card.iphone .copy-btn,
+        .prompt-card.iphone-15 .copy-btn {
+            background-color: rgba(0, 122, 255, 0.15);
+            color: #007AFF;
+        }
+        
+        .prompt-card.samsung .copy-btn {
+            background-color: rgba(0, 200, 83, 0.15);
+            color: #00C853;
+        }
+        
+        .prompt-card.pixel .copy-btn {
+            background-color: rgba(66, 133, 244, 0.15);
+            color: #4285F4;
+        }
+        
+        .prompt-card.iphone .copy-btn:hover,
+        .prompt-card.iphone-15 .copy-btn:hover {
+            background-color: rgba(0, 122, 255, 0.25);
+        }
+        
+        .prompt-card.samsung .copy-btn:hover {
+            background-color: rgba(0, 200, 83, 0.25);
+        }
+        
+        .prompt-card.pixel .copy-btn:hover {
+            background-color: rgba(66, 133, 244, 0.25);
+        }
+        
+        /* iPhone 15 Pro Max জন্য prompt-type badge */
+        .prompt-type.iphone-15 {
+            background-color: rgba(0, 122, 255, 0.15);
+            color: #007AFF;
+            font-weight: 700;
+        }
+        
+        /* iOS-style Footer */
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            color: #8E8E93;
+            font-size: 14px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .dark-mode footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        footer p {
+            margin: 8px 0;
+            font-weight: 500;
+        }
+        
+        /* iOS-style Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--light-bg);
+            border-radius: 10px;
+        }
+        
+        .dark-mode ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            border-radius: 10px;
+        }
+        
+        .dark-mode ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #64D2FF, #5AC8FA);
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #0056CC, #4846C6);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+            
+            .container {
+                padding: 100px 20px 40px;
+            }
+            
+            .hero h1 {
+                font-size: 38px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .prompts-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-title {
+                font-size: 28px;
+            }
+            
+            .lock-button {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+                font-size: 20px;
+            }
+            
+            .lock-screen-content {
+                padding: 30px 20px;
+                width: 95%;
+            }
+            
+            .lock-icon {
+                font-size: 60px;
+            }
+            
+            .lock-title {
+                font-size: 28px;
+            }
+            
+            .lock-message {
+                font-size: 16px;
+            }
+            
+            .unlock-button {
+                padding: 14px 30px;
+                font-size: 16px;
+            }
+            
+            .all-filters-btn {
+                right: 140px;
+                width: 45px;
+                height: 45px;
+                font-size: 22px;
+            }
+            
+            .ios-menu-content {
+                padding: 70px 15px 15px;
+            }
+            
+            .ios-menu-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+            }
+            
+            .ios-menu-item {
+                padding: 15px;
+            }
+            
+            .ios-menu-icon {
+                font-size: 24px;
+            }
+            
+            .ios-menu-title {
+                font-size: 14px;
+            }
+            
+            .ios-menu-subtitle {
+                font-size: 11px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .lock-button {
+                bottom: 15px;
+                right: 15px;
+                width: 50px;
+                height: 50px;
+                font-size: 18px;
+            }
+            
+            .lock-icon {
+                font-size: 50px;
+            }
+            
+            .lock-title {
+                font-size: 24px;
+            }
+            
+            .lock-message {
+                font-size: 15px;
+            }
+            
+            .prompt-card {
+                padding: 20px;
+            }
+            
+            .prompt-title {
+                font-size: 20px;
+            }
+            
+            .all-filters-btn {
+                right: 130px;
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+            
+            .ios-menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- iOS Style Menu -->
+    <div class="ios-menu" id="iosMenu">
+        <div class="ios-menu-content">
+            <div class="ios-menu-grid">
+                <div class="ios-menu-item active" data-filter="all">
+                    <div class="ios-menu-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="ios-menu-title">All Filters</div>
+                    <div class="ios-menu-subtitle">Show all Filter</div>
+                </div>
+                <div class="ios-menu-item" data-filter="iphone">
+                    <div class="ios-menu-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <div class="ios-menu-title">iPhone Filters</div>
+                    <div class="ios-menu-subtitle">Apple Filter</div>
+                </div>
+                <div class="ios-menu-item" data-filter="iphone-15">
+                    <div class="ios-menu-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="ios-menu-title">iPhone 15 Pro Max</div>
+                    <div class="ios-menu-subtitle">Apple Filter</div>
+                </div>
+                <div class="ios-menu-item" data-filter="samsung">
+                    <div class="ios-menu-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <div class="ios-menu-title">Samsung S25 Ultra</div>
+                    <div class="ios-menu-subtitle">Samsung Filter</div>
+                </div>
+                <div class="ios-menu-item" data-filter="pixel">
+                    <div class="ios-menu-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="ios-menu-title">Google Pixel 10 Pro XL</div>
+                    <div class="ios-menu-subtitle">Google Filter</div>
+                </div>
+                <div class="ios-menu-item" data-filter="vivid">
+                    <div class="ios-menu-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="ios-menu-title">iPhone Vivid</div>
+                    <div class="ios-menu-subtitle">Bright & colorful</div>
+                </div>
+                <div class="ios-menu-item" data-filter="dramatic">
+                    <div class="ios-menu-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <div class="ios-menu-title">iPhone Dramatic</div>
+                    <div class="ios-menu-subtitle">Cinematic look</div>
+                </div>
+                <div class="ios-menu-item" data-filter="portrait">
+                    <div class="ios-menu-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="ios-menu-title">iPhone Portrait</div>
+                    <div class="ios-menu-subtitle">Studio light effects</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- All Filters Button - Transparent with Icon -->
+    <button class="all-filters-btn" id="allFiltersBtn" title="Open All Filters Menu">
+        <i class="fas fa-layer-group"></i>
+    </button>
+    
+    <!-- Header with Glassmorphism -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i class="fab fa-apple"></i>
+            </div>
+            <div class="logo-text">Alex James</div>
+        </div>
+        
+        <div class="theme-toggle">
+            <div class="toggle-switch" id="themeToggle">
+                <!-- Sun and moon icons removed as requested -->
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <section class="hero">
+            <h1>iPhone Samsung Google Pixel</h1>
+
+        </section>
+        
+        <!-- iPhone Section -->
+        <section class="device-section" id="iphone-section">
+            <h2 class="category-title iphone">
+                <i class="fab fa-apple category-icon iphone"></i>
+                iPhone Filters
+            </h2>
+            
+            <div class="prompts-container" id="iphonePromptsContainer">
+                <!-- iPhone prompt cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- iPhone 15 Pro Max Section -->
+        <section class="device-section" id="iphone15-section">
+            <h2 class="category-title iphone">
+                <!-- iPhone 15 Pro Max এর জন্য Apple লোগো -->
+                <i class="fab fa-apple category-icon iphone"></i>
+                iPhone 15 Pro Max Filters
+            </h2>
+            
+            <div class="prompts-container" id="iphone15PromptsContainer">
+                <!-- iPhone 15 Pro Max prompt cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Samsung Galaxy S25 Ultra Section -->
+        <section class="device-section" id="samsung-section">
+            <h2 class="category-title samsung">
+                <i class="fab fa-android category-icon samsung"></i>
+                Samsung Galaxy S25 Ultra Filters
+            </h2>
+            
+            <div class="prompts-container" id="samsungPromptsContainer">
+                <!-- Samsung prompt cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Google Pixel 10 Pro XL Section -->
+        <section class="device-section" id="pixel-section">
+            <h2 class="category-title pixel">
+                <i class="fab fa-google category-icon pixel"></i>
+                Google Pixel 10 Pro XL Filters
+            </h2>
+            
+            <div class="prompts-container" id="pixelPromptsContainer">
+                <!-- Pixel prompt cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <!-- Lock Button -->
+    <button class="lock-button" id="lockButton" title="Lock Website">
+        <i class="fas fa-lock"></i>
+    </button>
+    
+    <!-- Lock Overlay -->
+    <div class="lock-overlay" id="lockOverlay">
+        <div class="lock-screen-content">
+            <div class="lock-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h2 class="lock-title">Website Locked</h2>
+            <p class="lock-message">This website has been locked. Click the button below to unlock and continue browsing.</p>
+            <button class="unlock-button" id="unlockButton">
+                <i class="fas fa-unlock"></i>
+                Unlock Website
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2026 Powered by Alex James
+        <p>Inspired by Apple iOS Design</p>
+        <p>Optimized for Gemini AI</p>
+        <p>WhatsApp : 01977547920</p>
+    </footer>
+    
+    <script>
+        // All prompts data (নম্বর সরানো হয়েছে)
+        const prompts = [
+            // iPhone Prompts
+            {
+            id: 1,
+            type: "vivid",
+            device: "iphone",
+            title: "iPhone Vivid Filter",
+            text: "Apply iPhone Vivid filter. Make the grass bright green, sky deep blue, and clouds crisp white. Boost brilliance, saturation, and vibrance. Keep the subject sharp and in focus, with soft iOS-style bokeh in the background. Do not change face, pose, outfit, or composition."
+            },
+            {
+            id: 2,
+            type: "vivid",
+            device: "iphone",
+            title: "Vivid Warm Enhancement",
+            text: "Enhance photo with iPhone Vivid Warm filter. Add warm tones to highlights, keep greens lush, sky rich, and clouds soft white. Increase saturation and vibrance. Maintain subject sharpness with soft bokeh in the background. Do not alter pose, face, or outfit."
+            },
+            {
+            id: 3,
+            type: "vivid",
+            device: "iphone",
+            title: "Vivid Cool Filter",
+            text: "Apply iPhone Vivid Cool filter for a fresh, cool-toned look. Deepen blues in sky, make greens vibrant, clouds crisp. Boost brilliance and saturation. Keep the main subject clear and sharp with soft iOS-style background bokeh. Do not change pose, face, or outfit."
+            },
+            {
+            id: 4,
+            type: "vivid",
+            device: "iphone",
+            title: "Vivid Color Grading",
+            text: "Enhance the photo with iPhone-style vivid color grading. Make the greenery lush and vibrant, the sky a rich deep blue, and clouds bright white. Boost vibrance, brilliance, and saturation while keeping the subject sharp. Apply soft iOS-style bokeh blur in the background. Do not change the face, pose, outfit, or composition."
+            },
+            {
+            id: 5,
+            type: "vivid",
+            device: "iphone",
+            title: "High-Contrast Vivid",
+            text: "Apply high-contrast iPhone-style vivid filter. Intensify greens in plants and grass, make the sky strikingly blue, and clouds crisp. Increase color saturation and clarity for a clean, vivid iPhone look. Add subtle bokeh background blur to enhance focus on the subject without altering their position, expression, or outfit."
+            },
+            {
+            id: 6,
+            type: "dramatic",
+            device: "iphone",
+            title: "Dramatic Filter",
+            text: "Apply iPhone Dramatic filter. Increase contrast and color depth for a cinematic look. Make grass vivid, sky deep blue, and clouds bright. Enhance clarity, brilliance, and vibrance. Add subtle iOS-style bokeh behind the subject without changing their pose or outfit."
+            },
+            {
+            id: 7,
+            type: "dramatic",
+            device: "iphone",
+            title: "Dramatic Warm",
+            text: "Enhance photo with iPhone Dramatic Warm filter. Warm up highlights and shadows, keep greens rich and sky vivid. Increase saturation and brilliance. Keep subject sharp with soft background bokeh. Do not alter face, pose, or outfit."
+            },
+            {
+            id: 8,
+            type: "dramatic",
+            device: "iphone",
+            title: "Dramatic Cool",
+            text: "Apply iPhone Dramatic Cool filter for moody yet vivid colors. Make grass lively, sky deep and rich, clouds bright. Boost vibrance and clarity. Maintain subject sharpness with soft iOS-style bokeh in the background. Face, pose, and outfit remain unchanged."
+            },
+            {
+            id: 9,
+            type: "silvertone",
+            device: "iphone",
+            title: "Silvertone Filter",
+            text: "Apply iPhone Silvertone filter for elegant monochrome. Keep subject clear and sharp, with soft background bokeh. Enhance contrast and texture, but do not change pose, outfit, or face."
+            },
+            {
+            id: 10,
+            type: "silvertone",
+            device: "iphone",
+            title: "Noir Filter",
+            text: "Apply iPhone Noir filter for classic black-and-white cinematic look. Enhance contrast and sharpness, maintain soft bokeh behind the subject. Keep main subject intact without changing pose, outfit, or face."
+            },
+            {
+            id: 11,
+            type: "portrait",
+            device: "iphone",
+            title: "Classic Portrait Studio Light",
+            text: "Apply iPhone 15 Pro Max Portrait Studio Light. Illuminate the subject's face naturally with soft shadows. Make grass vibrant green, sky deep blue, clouds crisp white. Boost brilliance, saturation, and vibrance. Keep the subject sharp, add soft iOS-style bokeh blur to the background. Do not change pose, face, or outfit."
+            },
+            {
+            id: 12,
+            type: "portrait",
+            device: "iphone",
+            title: "Vivid Colors Portrait Studio",
+            text: "Enhance with iPhone 15 Pro Max Portrait Studio Light in vivid mode. Brighten greens, enrich sky blues, make clouds pure white. Boost vibrance and clarity. Keep main subject intact, apply gentle background bokeh blur for professional iPhone portrait look."
+            },
+            {
+            id: 13,
+            type: "portrait",
+            device: "iphone",
+            title: "Warm Portrait Studio Light",
+            text: "Use iPhone 15 Pro Max Portrait Studio Light with warm tones. Soften highlights on the face, give subtle warm glow to the background. Enhance colors in grass, sky, and clouds. Apply soft iOS-style bokeh blur, keep subject sharp and unchanged."
+            },
+            {
+            id: 14,
+            type: "portrait",
+            device: "iphone",
+            title: "Cool Portrait Studio Light",
+            text: "Apply iPhone 15 Pro Max Portrait Studio Light with cool-toned vivid filter. Deepen sky blues, make greens lively, clouds crisp. Maintain sharpness of the subject, add smooth background bokeh blur. Pose, face, and outfit remain unchanged."
+            },
+            {
+            id: 15,
+            type: "portrait",
+            device: "iphone",
+            title: "Dramatic Portrait Studio Light",
+            text: "Enhance with iPhone 15 Pro Max Portrait Studio Light Dramatic mode. Increase subtle contrast and color depth, make grass, sky, and clouds vivid. Keep subject intact, add soft iOS-style bokeh blur to background for cinematic portrait effect."
+            },
+            {
+            id: 16,
+            type: "portrait",
+            device: "iphone",
+            title: "High-Key Portrait Studio Light",
+            text: "Use iPhone 15 Pro Max High-Key Portrait Studio Light. Brighten subject evenly, enhance skin tones naturally, make background colors vivid. Add gentle background bokeh blur without altering pose, face, or outfit."
+            },
+            {
+            id: 17,
+            type: "portrait",
+            device: "iphone",
+            title: "Portrait Studio Vivid + Enhanced Bokeh",
+            text: "Apply iPhone 15 Pro Max Portrait Studio Light with enhanced vivid colors. Make grass bright green, sky rich blue, clouds bright white. Boost brilliance, saturation, and clarity. Apply soft, creamy background bokeh blur to isolate the subject while keeping them sharp."
+            },
+            {
+            id: 18,
+            type: "color",
+            device: "iphone",
+            title: "Vivid - Bright & Clean",
+            text: "Apply iPhone Vivid filter. Make grass bright green, sky deep blue, clouds crisp white. Boost vibrance, brilliance, and saturation. Keep main subject sharp, do not change pose, face, or outfit."
+            },
+            {
+            id: 19,
+            type: "color",
+            device: "iphone",
+            title: "Vivid - Natural Intensify",
+            text: "Enhance photo with iPhone Vivid filter. Intensify all colors naturally, make greens lush, sky strikingly blue, clouds white. Add soft iOS-style bokeh behind the subject."
+            },
+            {
+            id: 20,
+            type: "color",
+            device: "iphone",
+            title: "Vivid - Clean Look",
+            text: "Use iPhone Vivid filter for a bright and clean iPhone look. Boost saturation and clarity, keep subject sharp, subtle background blur. Do not alter pose or outfit."
+            },
+            {
+            id: 21,
+            type: "color",
+            device: "iphone",
+            title: "Vivid Warm - Warm Highlights",
+            text: "Apply iPhone Vivid Warm filter. Add warm highlights, enhance green grass and blue sky. Boost brilliance and vibrance. Keep subject intact with soft background bokeh."
+            },
+            {
+            id: 22,
+            type: "color",
+            device: "iphone",
+            title: "Vivid Warm - Lively Warm",
+            text: "Enhance with Vivid Warm filter. Make colors lively and warm, keep subject sharp. Add gentle bokeh to background for iPhone-style portrait."
+            },
+            {
+            id: 23,
+            type: "color",
+            device: "iphone",
+            title: "Vivid Warm - Natural Warm",
+            text: "Use iPhone Vivid Warm filter for natural warm tones. Brighten clouds, enrich sky, maintain subject clarity with soft bokeh."
+            },
+            {
+            id: 24,
+            type: "color",
+            device: "iphone",
+            title: "Vivid Cool - Deep Blues",
+            text: "Apply iPhone Vivid Cool filter. Deepen blues in sky, keep greenery fresh. Enhance vibrance and brilliance. Subject remains sharp, with soft background bokeh."
+            },
+            {
+            id: 25,
+            type: "color",
+            device: "iphone",
+            title: "Vivid Cool - Cool Crisp",
+            text: "Enhance photo using Vivid Cool filter. Cool tones, crisp clouds, vivid greens. Maintain subject clarity, add subtle iOS-style background blur."
+            },
+            {
+            id: 26,
+            type: "color",
+            device: "iphone",
+            title: "Vivid Cool - Fresh Cool",
+            text: "Use iPhone Vivid Cool filter for fresh, cool-toned look. Boost saturation and clarity. Keep pose, outfit, and face unchanged."
+            },
+            {
+            id: 27,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic - Cinematic Colors",
+            text: "Apply iPhone Dramatic filter. Increase contrast and color depth, make greens, sky, and clouds vivid. Keep subject sharp, add soft bokeh background."
+            },
+            {
+            id: 28,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic - Rich Colors",
+            text: "Enhance photo with Dramatic filter. Rich colors and subtle contrast, maintain subject clarity. Soft background blur for cinematic iPhone look."
+            },
+            {
+            id: 29,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic - Color Intensity",
+            text: "Use Dramatic filter. Intensify colors without changing subject pose or outfit. Add subtle bokeh to isolate subject."
+            },
+            {
+            id: 30,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic Warm - Warm Rich",
+            text: "Apply iPhone Dramatic Warm filter. Warm highlights and shadows, make colors rich and vivid. Keep subject sharp, add gentle bokeh behind."
+            },
+            {
+            id: 31,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic Warm - Vibrant Warm",
+            text: "Enhance photo with Dramatic Warm. Boost vibrance and brilliance. Maintain subject pose and outfit with soft iOS-style background blur."
+            },
+            {
+            id: 32,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic Warm - Cinematic Warm",
+            text: "Use Dramatic Warm filter for cinematic warm look. Deep greens and sky, crisp clouds, subject sharp, subtle bokeh background."
+            },
+            {
+            id: 33,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic Cool - Mood Blues",
+            text: "Apply iPhone Dramatic Cool filter. Enhance blues and greens, add subtle contrast. Keep subject sharp, soft background bokeh for cinematic effect."
+            },
+            {
+            id: 34,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic Cool - Moody Vivid",
+            text: "Use Dramatic Cool filter for moody vivid tones. Deepen sky and cloud details, maintain subject clarity. Add gentle background blur."
+            },
+            {
+            id: 35,
+            type: "color",
+            device: "iphone",
+            title: "Dramatic Cool - Vibrant Shadows",
+            text: "Enhance with Dramatic Cool. Vibrant colors and subtle shadows. Keep main subject intact, soft iOS-style bokeh background."
+            },
+            {
+            id: 36,
+            type: "color",
+            device: "iphone",
+            title: "Silvertone - Elegant Mono",
+            text: "Apply iPhone Silvertone filter. Convert photo to elegant monochrome, enhance contrast and texture. Keep subject sharp with soft background blur."
+            },
+            {
+            id: 37,
+            type: "color",
+            device: "iphone",
+            title: "Silvertone - Classy B&W",
+            text: "Use Silvertone filter for classy black-and-white effect. Maintain subject clarity, subtle iOS-style bokeh. Do not alter pose or outfit."
+            },
+            {
+            id: 38,
+            type: "color",
+            device: "iphone",
+            title: "Noir - Classic B&W",
+            text: "Apply iPhone Noir filter. Classic black-and-white look with enhanced contrast. Keep subject sharp, soft background bokeh. Pose and outfit unchanged."
+            },
+            {
+            id: 39,
+            type: "color",
+            device: "iphone",
+            title: "Noir - Cinematic Mono",
+            text: "Use Noir filter for cinematic monochrome effect. Maintain subject clarity, add gentle background blur."
+            },
+            {
+            id: 40,
+            type: "color",
+            device: "iphone",
+            title: "Mono - Smooth Contrast",
+            text: "Apply iPhone Mono filter. Black-and-white look with smooth contrast. Keep subject intact, add subtle bokeh to background."
+            },
+            {
+            id: 41,
+            type: "color",
+            device: "iphone",
+            title: "Mono - Elegant Mono",
+            text: "Use Mono filter for elegant monochrome. Maintain sharpness of subject and natural background blur."
+            },
+            {
+            id: 42,
+            type: "color",
+            device: "iphone",
+            title: "High-Key Mono - Bright Mono",
+            text: "Apply iPhone High-Key Mono filter. Bright monochrome effect with soft highlights. Keep subject clear and sharp, subtle background bokeh."
+            },
+            
+            // iPhone 15 Pro Max Prompts
+            {
+            id: 43,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Natural Vivid Selfie (Most Popular)",
+            text: "Shot on iPhone 15 Pro Max (Front Camera), Natural Vivid selfie filter, true-to-life skin tone, soft HDR lighting, balanced brightness, clear facial details, slight background blur, premium flagship selfie look, Instagram ready"
+            },
+            {
+            id: 44,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Portrait Studio Light Selfie (Trending)",
+            text: "iPhone 15 Pro Max selfie camera, Portrait mode with Studio Light, soft cinematic blur in background, sharp face focus, eye enhancement, natural skin texture, clean and premium look, viral Instagram selfie style"
+            },
+            {
+            id: 45,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Low Light / Night Selfie",
+            text: "Shot on iPhone 15 Pro Max (Front Camera), Night Mode selfie, noise reduction, natural skin tone in low light, soft glow on face, sharp facial details, premium night selfie look"
+            },
+            {
+            id: 46,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Bright Outdoor Selfie",
+            text: "iPhone 15 Pro Max front camera, bright daylight selfie, enhanced natural colors, soft background bokeh, HDR on, crystal clear face details, premium outdoor selfie style"
+            },
+            {
+            id: 47,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Social Media Ready Selfie",
+            text: "Shot on iPhone 15 Pro Max (Selfie Camera), Instagram trending filter, slightly warm tone, soft shadows, balanced contrast, realistic skin tone, premium mobile selfie look, viral social media ready"
+            },
+            {
+            id: 48,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Standard Vivid Portrait",
+            text: "Apply iPhone 15 Pro Max Portrait Studio Light. Illuminate the face naturally with soft highlights, make grass green, sky deep blue, clouds crisp white. Boost brilliance, vibrance, and saturation. Keep subject sharp, add soft iOS-style background bokeh blur. Do not change pose, face, or outfit."
+            },
+            {
+            id: 49,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Vivid Mode Portrait",
+            text: "Enhance photo with Portrait Studio Light vivid mode. Make colors pop: lush greens, rich blue sky, bright clouds. Maintain sharpness of main subject, add gentle background bokeh. Pose, face, and outfit remain unchanged."
+            },
+            {
+            id: 50,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Vivid Color Grading Portrait",
+            text: "Use iPhone Portrait Studio Light with vivid color grading. Brighten grass, sky, and clouds. Add soft background bokeh blur to isolate subject. Keep all main elements intact."
+            },
+            {
+            id: 51,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Warm Mode Portrait",
+            text: "Apply Portrait Studio Light Warm mode. Soft warm highlights on face, rich green grass, deep blue sky, white clouds. Boost vibrance and clarity. Add subtle background bokeh, do not alter pose or outfit."
+            },
+            {
+            id: 52,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Warm-Toned Portrait",
+            text: "Enhance photo with warm-toned Portrait Studio Light. Subject remains sharp, background gets gentle bokeh blur. Colors vivid and natural."
+            },
+            {
+            id: 53,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Cool Mode Portrait",
+            text: "Apply Portrait Studio Light Cool mode. Deepen sky blues, enhance greens, clouds crisp. Keep subject face and outfit intact. Add smooth iOS-style bokeh background."
+            },
+            {
+            id: 54,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Cool-Toned Portrait",
+            text: "Enhance photo using cool-toned Portrait Studio Light. Make colors vivid without altering subject. Subtle background blur for professional portrait look."
+            },
+            {
+            id: 55,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Dramatic Mode Portrait",
+            text: "Apply Portrait Studio Light Dramatic mode. Increase contrast and color depth subtly, make greenery, sky, and clouds vivid. Add soft bokeh background, maintain sharp subject."
+            },
+            {
+            id: 56,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "High-Key Portrait",
+            text: "Apply High-Key Portrait Studio Light. Bright even illumination on face, vibrant background, soft bokeh blur. Subject remains sharp and natural."
+            },
+            {
+            id: 57,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Enhanced Vivid Bokeh",
+            text: "Apply Portrait Studio Light with enhanced vivid colors. Bright green grass, deep blue sky, crisp white clouds. Add creamy iOS-style bokeh behind subject, keep subject sharp."
+            },
+            {
+            id: 58,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Soft Bokeh Portrait",
+            text: "Use iPhone Portrait Studio Light with soft bokeh background. Enhance brilliance and vibrance, keep main subject clear and sharp."
+            },
+            {
+            id: 59,
+            type: "iphone-15",
+            device: "iphone-15",
+            title: "Cinematic Mode Portrait",
+            text: "Apply Portrait Studio Light Cinematic mode. Deep contrast, vivid colors, soft bokeh behind subject. Maintain sharp subject and natural pose."
+            },
+            
+            // Samsung Galaxy S25 Ultra Prompts
+            {
+            id: 60,
+            type: "samsung",
+            device: "samsung",
+            title: "Glow Look",
+            text: "Samsung S25 Ultra portrait mode, soft glow filter, warm highlights, natural skin tone, smooth face texture, soft light, creamy background bokeh, DSLR style portrait, high detail, clean background"
+            },
+            {
+            id: 61,
+            type: "samsung",
+            device: "samsung",
+            title: "Amber Look",
+            text: "Samsung S25 Ultra portrait mode, amber warm filter, golden hour light, soft shadows, warm skin tone, cinematic portrait, natural blur background, high dynamic range"
+            },
+            {
+            id: 62,
+            type: "samsung",
+            device: "samsung",
+            title: "Crystal Look",
+            text: "Samsung S25 Ultra portrait mode, crystal clear filter, cool tone, sharp details, high contrast, ultra HD portrait, clean skin texture, professional lighting, smooth bokeh"
+            },
+            {
+            id: 63,
+            type: "samsung",
+            device: "samsung",
+            title: "Pulse Look",
+            text: "Samsung S25 Ultra portrait mode, pulse vibrant filter, balanced colors, natural skin tone, soft contrast, bright portrait, smooth background blur, ultra realistic"
+            },
+            {
+            id: 64,
+            type: "samsung",
+            device: "samsung",
+            title: "Shadow / Shade Look",
+            text: "Samsung S25 Ultra portrait mode, black and white filter, deep shadows, soft highlights, dramatic lighting, cinematic monochrome portrait, strong contrast, smooth bokeh"
+            },
+            {
+            id: 65,
+            type: "samsung",
+            device: "samsung",
+            title: "Natural Vivid Pro (Most Popular)",
+            text: "Shot on Samsung Galaxy S25 Ultra, 200MP main camera look, Natural Vivid filter, balanced saturation, true-to-life skin tone, HDR on, soft contrast, clean sharp details, DSLR quality, natural daylight, premium flagship look, high dynamic range, no overprocessing"
+            },
+            {
+            id: 66,
+            type: "samsung",
+            device: "samsung",
+            title: "Portrait Cinematic Blur (Trending)",
+            text: "Samsung Galaxy S25 Ultra portrait mode, cinematic portrait filter, soft background bokeh blur, natural skin tone, studio lighting effect, sharp subject focus, DSLR portrait look, premium smartphone photography"
+            },
+            {
+            id: 67,
+            type: "samsung",
+            device: "samsung",
+            title: "HDR Clear Boost (Outdoor Popular)",
+            text: "Shot on Samsung Galaxy S25 Ultra, HDR Clear Boost filter, bright outdoor lighting, deep blue sky, enhanced greens, high sharpness, crystal clear image, flagship camera quality"
+            },
+            {
+            id: 68,
+            type: "samsung",
+            device: "samsung",
+            title: "Night Vivid Pro (Low Light)",
+            text: "Samsung Galaxy S25 Ultra night mode, Night Vivid filter, low light photography, clean noise reduction, sharp night details, realistic colors, premium night camera look"
+            },
+            {
+            id: 69,
+            type: "samsung",
+            device: "samsung",
+            title: "Selfie Camera (Most Popular)",
+            text: "Shot on Samsung Galaxy S25 Ultra (Front Camera), Selfie camera portrait mode, Natural Vivid selfie filter, smooth but realistic skin tone, no over-smoothing, soft HDR, balanced brightness, clear facial details, eye focus enhancement, natural color correction, studio light selfie look, premium flagship selfie quality, Instagram ready"
+            },
+            {
+            id: 70,
+            type: "samsung",
+            device: "samsung",
+            title: "Selfie Blur + Portrait Look",
+            text: "Samsung Galaxy S25 Ultra selfie portrait, soft background blur, natural bokeh effect, sharp face focus, cinematic selfie look, balanced contrast, clean skin texture, DSLR style selfie"
+            },
+            {
+            id: 71,
+            type: "samsung",
+            device: "samsung",
+            title: "Low Light Selfie",
+            text: "Samsung Galaxy S25 Ultra front camera, night selfie mode, clean low light selfie, noise reduction, soft light on face, natural skin color, clear facial sharpness"
+            },
+            {
+            id: 72,
+            type: "samsung",
+            device: "samsung",
+            title: "Beauty Off – Natural Look",
+            text: "Samsung Galaxy S25 Ultra selfie camera, beauty mode off, true skin texture, realistic face details, natural lighting, premium selfie quality"
+            },
+            {
+            id: 73,
+            type: "samsung",
+            device: "samsung",
+            title: "Professional Portrait Mode",
+            text: "Samsung S25 Ultra professional portrait mode, studio lighting effect, perfect skin tones, sharp focus on eyes, natural background blur, DSLR-like quality"
+            },
+            {
+            id: 74,
+            type: "samsung",
+            device: "samsung",
+            title: "Classic Milky Way Astrophotography",
+            text: "Samsung Galaxy S25 Ultra astrophotography mode, ultra wide night sky, detailed Milky Way galaxy visible, millions of sharp stars, deep black sky, natural colors, low noise, long exposure astrophotography, realistic Samsung night processing, high dynamic range, crisp star details, professional mobile astrophotography"
+            },
+            {
+            id: 75,
+            type: "samsung",
+            device: "samsung",
+            title: "Deep Space Clean Look Astrophotography",
+            text: "Samsung Galaxy S25 Ultra astro mode, deep space night sky, dense star clusters, subtle Milky Way texture, clean blacks, no light pollution, professional noise reduction, ultra realistic astrophotography, high clarity, Samsung flagship camera quality"
+            },
+            {
+            id: 76,
+            type: "samsung",
+            device: "samsung",
+            title: "Galaxy Core Focus Astrophotography",
+            text: "Samsung Galaxy S25 Ultra astrophotography, Milky Way galaxy core close-up, vibrant but natural star colors, sharp cosmic dust clouds, long exposure night photography, ultra detailed stars, realistic Samsung night camera processing, premium astrophotography"
+            },
+            {
+            id: 77,
+            type: "samsung",
+            device: "samsung",
+            title: "Minimal Natural Astrophotography",
+            text: "Samsung Galaxy S25 Ultra night astro mode, minimal noise starry sky, natural exposure, soft contrast, realistic colors, clean astrophotography look, professional smartphone night capture, ultra high resolution"
+            },
+            
+            // Google Pixel 10 Pro XL Prompts
+            {
+            id: 78,
+            type: "pixel",
+            device: "pixel",
+            title: "Natural Vivid Selfie (Most Popular)",
+            text: "Shot on Google Pixel 10 Pro XL (Front Camera), Selfie camera portrait mode, Natural Vivid filter, true-to-life skin tone, soft HDR lighting, balanced brightness, clear facial details, slight background blur, premium flagship selfie look, Instagram ready"
+            },
+            {
+            id: 79,
+            type: "pixel",
+            device: "pixel",
+            title: "Portrait Studio Light Selfie",
+            text: "Google Pixel 10 Pro XL Front Camera, Portrait mode with Studio Light, soft cinematic blur in background, sharp face focus, eye enhancement, natural skin texture, clean and premium look, viral Instagram selfie style"
+            },
+            {
+            id: 80,
+            type: "pixel",
+            device: "pixel",
+            title: "Low Light / Night Selfie",
+            text: "Shot on Google Pixel 10 Pro XL (Selfie Camera), Night Mode selfie, noise reduction, natural skin tone in low light, soft glow on face, sharp facial details, premium night selfie look"
+            },
+            {
+            id: 81,
+            type: "pixel",
+            device: "pixel",
+            title: "Bright Daylight Selfie",
+            text: "Google Pixel 10 Pro XL Front Camera, Bright daylight selfie, enhanced natural colors, soft background bokeh, HDR on, crystal clear face details, premium outdoor selfie style"
+            },
+            {
+            id: 82,
+            type: "pixel",
+            device: "pixel",
+            title: "Social Media Ready Selfie",
+            text: "Shot on Google Pixel 10 Pro XL (Front Camera), Instagram trending filter, slightly warm tone, soft shadows, balanced contrast, realistic skin tone, premium mobile selfie look, viral social media ready"
+            },
+            {
+            id: 83,
+            type: "pixel",
+            device: "pixel",
+            title: "Natural Vivid Outdoor",
+            text: "Shot on Google Pixel 10 Pro XL (Back Camera), Natural Vivid filter, true-to-life colors, soft HDR lighting, balanced contrast, sharp details, premium flagship mobile photography look, Instagram ready"
+            },
+            {
+            id: 84,
+            type: "pixel",
+            device: "pixel",
+            title: "Portrait Mode Cinematic",
+            text: "Google Pixel 10 Pro XL Back Camera, Portrait mode, soft background bokeh blur, sharp subject focus, natural skin tones, cinematic DSLR style look, premium social media ready photography"
+            },
+            {
+            id: 85,
+            type: "pixel",
+            device: "pixel",
+            title: "Night Sight / Low Light",
+            text: "Shot on Google Pixel 10 Pro XL (Back Camera), Night Sight mode, noise reduction, soft lighting, realistic colors in low light, crisp details, premium low light photography look"
+            },
+            {
+            id: 86,
+            type: "pixel",
+            device: "pixel",
+            title: "HDR Clear Boost (Daylight)",
+            text: "Google Pixel 10 Pro XL Back Camera, HDR Clear Boost filter, bright daylight photography, enhanced sky and greens, true-to-life colors, crystal clear sharp details, premium outdoor look"
+            },
+            {
+            id: 87,
+            type: "pixel",
+            device: "pixel",
+            title: "Cinematic City Lights",
+            text: "Shot on Google Pixel 10 Pro XL Back Camera, Night Mode / Low Light, cityscape night photography, enhanced neon and street lights, natural skin tone if subjects present, premium cinematic urban look, Instagram reel ready"
+            },
+            {
+            id: 88,
+            type: "pixel",
+            device: "pixel",
+            title: "Natural Vivid Back Camera",
+            text: "Shot on Google Pixel 10 Pro XL (Back Camera), Natural Vivid filter, true-to-life colors, HDR on, sharp details, balanced brightness and contrast, clean premium flagship look, Instagram ready"
+            },
+            {
+            id: 89,
+            type: "pixel",
+            device: "pixel",
+            title: "Cinematic Portrait / Blur Background",
+            text: "Google Pixel 10 Pro XL, Back Camera, Portrait Mode, soft background bokeh blur, sharp subject focus, natural skin tone or object colors, premium DSLR-style portrait, Instagram reel ready"
+            },
+            {
+            id: 90,
+            type: "pixel",
+            device: "pixel",
+            title: "Night Mode Photography",
+            text: "Shot on Google Pixel 10 Pro XL (Back Camera), Night Mode, low light optimization, noise reduction, soft glow on subjects, enhanced highlights and shadows, realistic colors, premium night photography"
+            },
+            {
+            id: 91,
+            type: "pixel",
+            device: "pixel",
+            title: "Bright Outdoor HDR",
+            text: "Google Pixel 10 Pro XL, Back Camera, Bright daylight HDR filter, vibrant but natural colors, deep blue sky and rich greens, soft background blur, sharp object details, premium outdoor photography"
+            },
+            {
+            id: 92,
+            type: "pixel",
+            device: "pixel",
+            title: "Urban Cityscape Night Look",
+            text: "Shot on Google Pixel 10 Pro XL (Back Camera), Cityscape Night filter, enhanced neon and street lights, natural color balance, HDR on, clear building and street details, premium urban night photography look"
+            },
+            {
+            id: 93,
+            type: "pixel",
+            device: "pixel",
+            title: "Professional Portrait Studio",
+            text: "Google Pixel 10 Pro XL portrait mode, professional studio lighting, perfect skin tones, sharp facial features, natural background separation, premium portrait photography"
+            },
+            {
+            id: 94,
+            type: "pixel",
+            device: "pixel",
+            title: "Vivid Landscape Mode",
+            text: "Shot on Google Pixel 10 Pro XL, Landscape mode, vivid colors, deep blue skies, lush green vegetation, high dynamic range, professional landscape photography look"
+            },
+            {
+            id: 95,
+            type: "pixel",
+            device: "pixel",
+            title: "Macro Photography Mode",
+            text: "Google Pixel 10 Pro XL Macro mode, extreme close-up details, natural colors, soft background blur, sharp focus on subject, premium macro photography"
+            },
+            {
+            id: 96,
+            type: "pixel",
+            device: "pixel",
+            title: "Golden Hour Photography",
+            text: "Shot on Google Pixel 10 Pro XL, Golden hour mode, warm golden tones, soft natural light, long shadows, cinematic atmosphere, premium golden hour photography"
+            },
+            {
+            id: 97,
+            type: "pixel",
+            device: "pixel",
+            title: "Black & White Artistic",
+            text: "Google Pixel 10 Pro XL, Black and White mode, high contrast, deep blacks, bright whites, artistic monochrome, premium artistic photography"
+            },
+            {
+            id: 98,
+            type: "pixel",
+            device: "pixel",
+            title: "Astrophotography Mode",
+            text: "Shot on Google Pixel 10 Pro XL, Astrophotography mode, clear star details, dark sky with bright stars, minimal noise, long exposure effect, premium astrophotography"
+            },
+            {
+            id: 99,
+            type: "pixel",
+            device: "pixel",
+            title: "Food Photography Mode",
+            text: "Google Pixel 10 Pro XL, Food mode, vibrant colors, natural textures, soft lighting, appetizing look, premium food photography"
+            },
+            {
+            id: 100,
+            type: "pixel",
+            device: "pixel",
+            title: "Architecture Mode",
+            text: "Shot on Google Pixel 10 Pro XL, Architecture mode, straight lines, geometric patterns, dramatic angles, clean composition, premium architecture photography"
+            },
+            {
+            id: 101,
+            type: "pixel",
+            device: "pixel",
+            title: "Street Photography Mode",
+            text: "Google Pixel 10 Pro XL, Street photography mode, candid moments, natural lighting, urban atmosphere, storytelling composition, premium street photography"
+            },
+            {
+            id: 102,
+            type: "pixel",
+            device: "pixel",
+            title: "Sport Action Mode",
+            text: "Shot on Google Pixel 10 Pro XL, Sport mode, fast action freeze, sharp focus on moving subjects, dynamic composition, premium sports photography"
+            },
+            {
+            id: 103,
+            type: "pixel",
+            device: "pixel",
+            title: "Pet Photography Mode",
+            text: "Google Pixel 10 Pro XL, Pet mode, natural pet expressions, sharp focus on eyes, natural colors, premium pet photography"
+            },
+            {
+            id: 104,
+            type: "pixel",
+            device: "pixel",
+            title: "Pro Mode Manual Settings",
+            text: "Shot on Google Pixel 10 Pro XL, Pro mode, manual settings for experienced photographers, RAW format support, complete creative control, premium professional photography"
+            },
+            {
+            id: 105,
+            type: "pixel",
+            device: "pixel",
+            title: "Classic Pixel Astrophotography",
+            text: "Google Pixel 10 Pro XL Astrophotography Mode, ultra clear night sky, sharp milky way galaxy, long exposure stars, low noise, natural deep blue sky, realistic star colors, high dynamic range, tripod shot, no light pollution, cinematic night photography, 8K detail"
+            },
+            {
+            id: 106,
+            type: "pixel",
+            device: "pixel",
+            title: "Urban Sky City Astrophotography",
+            text: "Google Pixel 10 Pro XL night astrophotography, city skyline under starry sky, controlled light pollution, visible constellations, clean shadows, realistic colors, sharp stars, HDR night mode, premium smartphone photography look"
+            },
+            {
+            id: 107,
+            type: "pixel",
+            device: "pixel",
+            title: "Deep Space Look Cinematic Style Astrophotography",
+            text: "Pixel 10 Pro XL astrophotography mode, dramatic deep space sky, bright stars and nebula effect, rich contrast, cool tone night colors, ultra sharp focus, professional astrophotography style, long exposure simulation, noise-free image"
+            },
+            {
+            id: 108,
+            type: "pixel",
+            device: "pixel",
+            title: "Minimal & Natural Pixel Signature Astrophotography",
+            text: "Google Pixel 10 Pro XL astro mode, minimal processing, true-to-life night sky, soft stars, realistic exposure, clean dark sky, zero oversharpening, natural Google Pixel color science, premium mobile astrophotography"
+            },
+            // iPhone 15 Pro Max Prompts (উপরে যুক্ত করতে হবে)
+            {
+            id: 109,
+            type: "night",
+            device: "iphone-15",
+            title: "Night Mode + City Lights",
+            text: "iPhone 15 Pro Max Night Mode, city night photography, glowing street lights, clean highlights, deep blacks, minimal noise, sharp focus, cinematic urban night, realistic colors, HDR night shot, ultra-clear details"
+            },
+            {
+            id: 110,
+            type: "night",
+            device: "iphone-15",
+            title: "Soft Night Portrait",
+            text: "iPhone 15 Pro Max Night Mode portrait, soft natural skin tones, smooth background blur, low-light clarity, gentle highlights, realistic night lighting, Apple portrait style, clean and sharp face, premium quality"
+            },
+            {
+            id: 111,
+            type: "night",
+            device: "iphone-15",
+            title: "Dramatic Night Mode",
+            text: "Shot on iPhone 15 Pro Max, Night Mode cinematic style, dramatic lighting, high contrast night scene, deep shadows, glowing highlights, film-like color grading, ultra-realistic, professional night photography"
+            },
+            {
+            id: 112,
+            type: "night",
+            device: "iphone-15",
+            title: "Night Mode + Stars / Sky",
+            text: "iPhone 15 Pro Max Night Mode, clear night sky, visible stars, low noise, natural sky colors, sharp foreground, long-exposure look, astrophotography inspired, ultra HD quality"
+            },
+            
+            // Samsung Galaxy S25 Ultra Prompts (উপরে যুক্ত করতে হবে)
+            {
+            id: 113,
+            type: "night",
+            device: "samsung",
+            title: "Night City Glow",
+            text: "Samsung Galaxy S25 Ultra Night Mode, ultra-clear night city photography, neon lights glow, balanced HDR, deep blacks with controlled highlights, sharp buildings, cinematic night tone, noise-free, realistic colors, professional smartphone night shot"
+            },
+            {
+            id: 114,
+            type: "night",
+            device: "samsung",
+            title: "Natural Low Light",
+            text: "Samsung Galaxy S25 Ultra Night Mode, natural low-light photography, soft ambient light, realistic shadows, minimal noise, true-to-life colors, clean dark areas, no over-sharpening"
+            },
+            {
+            id: 115,
+            type: "night",
+            device: "samsung",
+            title: "Cinematic Night Mood",
+            text: "Samsung Galaxy S25 Ultra Night Mode cinematic style, dramatic lighting, teal and orange tone, deep contrast, film-like shadows, soft glow highlights, professional night cinema look"
+            },
+            {
+            id: 116,
+            type: "night",
+            device: "samsung",
+            title: "Night Sky & Stars",
+            text: "Samsung Galaxy S25 Ultra Night Mode, clear night sky, visible stars, enhanced Milky Way detail, low noise, deep blue sky, long exposure effect, sharp foreground"
+            },
+            {
+            id: 117,
+            type: "night",
+            device: "samsung",
+            title: "Street Light Glow",
+            text: "Samsung Galaxy S25 Ultra Night Mode portrait, street light glow, soft skin tones, background light bokeh, balanced exposure, sharp subject, creamy blur"
+            },
+            
+            // iPhone 15 Pro Max – Additional Portrait Prompts (উপরে যুক্ত করতে হবে)
+            {
+            id: 118,
+            type: "portrait",
+            device: "iphone-15",
+            title: "iPhone 15 Pro Max – Portrait",
+            text: "Ultra-realistic portrait photo captured on iPhone 15 Pro Max – Portrait Mode, natural skin tone with soft texture, DSLR-like background bokeh blur, smooth depth separation, studio-quality lighting with balanced highlights and shadows, sharp facial details, clear eyes, natural lip color, cinematic color grading inspired by Apple ProRAW, soft contrast, vivid yet realistic colors, clean background, professional mobile photography look, high dynamic range (HDR), ultra-high resolution, noise-free, premium iOS camera aesthetic"
+            },
+            {
+            id: 119,
+            type: "portrait",
+            device: "iphone-15",
+            title: "Outdoor Cinematic Portrait",
+            text: "Captured with iPhone 15 Pro Max portrait mode, cinematic lighting, warm color grading, shallow depth of field, natural sunlight, dramatic background blur, ultra realistic portrait"
+            },
+            
+            // Google Pixel 10 Pro XL – Additional Portrait Prompts (উপরে যুক্ত করতে হবে)
+            {
+            id: 120,
+            type: "portrait",
+            device: "pixel",
+            title: "Pixel 10 Pro XL – Portrait",
+            text: "Ultra-realistic portrait photo shot on Google Pixel 10 Pro XL, Portrait Mode, natural skin tones, soft and accurate skin texture, DSLR-like depth of field, smooth background blur (computational bokeh), true-to-life colors, balanced exposure, gentle contrast, HDR+ clarity, sharp focus on eyes, natural facial details, cinematic lighting, clean and minimal background, professional smartphone photography, 4K quality"
+            },
+            {
+            id: 121,
+            type: "portrait",
+            device: "pixel",
+            title: "Pixel Portrait – Soft Natural Light",
+            text: "Google Pixel 10 Pro XL portrait mode photo, soft natural daylight, even skin tone, subtle HDR+, realistic color science, background smoothly blurred with edge-accurate bokeh, no over-sharpening, no artificial glow, clean portrait look, realistic smartphone camera output, high detail, premium mobile photography"
+            },
+            {
+            id: 122,
+            type: "portrait",
+            device: "pixel",
+            title: "Pixel Portrait – Low Light / Night Look",
+            text: "Portrait photo captured on Google Pixel 10 Pro XL, low-light portrait mode, Night Sight style, clean noise-free image, soft light falloff, natural skin color preservation, cinematic background blur, realistic depth mapping, sharp subject, professional mobile portrait photography"
+            },
+            {
+            id: 123,
+            type: "portrait",
+            device: "pixel",
+            title: "Pixel Portrait – Vivid Yet Real",
+            text: "Google Pixel 10 Pro XL portrait mode, slightly vivid colors but still natural, enhanced micro-contrast, HDR+ processing, soft shadows, balanced highlights, realistic skin tones, creamy background bokeh, flagship smartphone portrait, ultra high quality"
+            },
+            {
+            id: 124,
+            type: "portrait",
+            device: "pixel",
+            title: "Pixel Portrait – Black & White",
+            text: "Black and white portrait shot on Google Pixel 10 Pro XL, portrait mode depth blur, high contrast monochrome tones, sharp facial details, smooth background separation, classic cinematic look, professional mobile photography"
+            },
+            
+            // Samsung Galaxy S25 Ultra – Additional Portrait Prompts (উপরে যুক্ত করতে হবে)
+            {
+            id: 125,
+            type: "portrait",
+            device: "samsung",
+            title: "Samsung Galaxy S25 Ultra – Portrait",
+            text: "Ultra-realistic portrait photo captured with Samsung Galaxy S25 Ultra Portrait Mode, DSLR-level depth of field, natural skin tone with soft smoothing, subject sharply in focus, background professionally blurred (creamy bokeh), accurate edge detection around hair and face, balanced exposure, soft natural light, vivid but realistic colors, high dynamic range, cinematic portrait look, premium smartphone photography, 50MP detail clarity, studio-quality output, social-media ready, ultra clean, high resolution"
+            }
+        ];
+
+        // DOM Elements
+        const themeToggle = document.getElementById('themeToggle');
+        const lockButton = document.getElementById('lockButton');
+        const unlockButton = document.getElementById('unlockButton');
+        const lockOverlay = document.getElementById('lockOverlay');
+        const toggleLabel = document.querySelector('.toggle-label');
+        const iosMenu = document.getElementById('iosMenu');
+        const allFiltersBtn = document.getElementById('allFiltersBtn');
+        const iosMenuItems = document.querySelectorAll('.ios-menu-item');
+        
+        // Container elements for each device section
+        const iphoneContainer = document.getElementById('iphonePromptsContainer');
+        const iphone15Container = document.getElementById('iphone15PromptsContainer');
+        const samsungContainer = document.getElementById('samsungPromptsContainer');
+        const pixelContainer = document.getElementById('pixelPromptsContainer');
+        
+        // iOS Menu Functions
+        function toggleIOSMenu() {
+            iosMenu.classList.toggle('active');
+            allFiltersBtn.classList.toggle('active');
+            
+            if (iosMenu.classList.contains('active')) {
+                allFiltersBtn.innerHTML = '<i class="fas fa-times"></i>';
+                allFiltersBtn.title = "Close Filters Menu";
+            } else {
+                allFiltersBtn.innerHTML = '<i class="fas fa-layer-group"></i>';
+                allFiltersBtn.title = "Open All Filters Menu";
+            }
+        }
+        
+        function selectIOSMenuItem(selectedItem) {
+            iosMenuItems.forEach(item => {
+                item.classList.remove('active');
+            });
+            selectedItem.classList.add('active');
+            
+            const filter = selectedItem.getAttribute('data-filter');
+            applyFilter(filter);
+            
+            // Close menu after selection on mobile
+            if (window.innerWidth <= 768) {
+                setTimeout(() => {
+                    toggleIOSMenu();
+                }, 300);
+            }
+        }
+        
+        // Lock System Functions
+        function lockWebsite() {
+            document.body.classList.add('locked');
+            lockOverlay.classList.add('active');
+            lockButton.classList.remove('pulsing');
+            lockButton.innerHTML = '<i class="fas fa-lock-open"></i>';
+            lockButton.title = "Unlock Website";
+            localStorage.setItem('websiteLocked', 'true');
+            console.log('Website locked');
+        }
+        
+        function unlockWebsite() {
+            document.body.classList.remove('locked');
+            lockOverlay.classList.remove('active');
+            lockButton.classList.add('pulsing');
+            lockButton.innerHTML = '<i class="fas fa-lock"></i>';
+            lockButton.title = "Lock Website";
+            localStorage.setItem('websiteLocked', 'false');
+            console.log('Website unlocked');
+        }
+        
+        // Check initial lock state from localStorage
+        function checkLockState() {
+            const isLocked = localStorage.getItem('websiteLocked');
+            
+            if (isLocked === 'true') {
+                lockButton.classList.remove('pulsing');
+                lockButton.innerHTML = '<i class="fas fa-lock-open"></i>';
+                lockButton.title = "Unlock Website";
+            } else {
+                lockButton.classList.add('pulsing');
+                lockButton.innerHTML = '<i class="fas fa-lock"></i>';
+                lockButton.title = "Lock Website";
+                
+                if (isLocked === null) {
+                    localStorage.setItem('websiteLocked', 'false');
+                }
+            }
+        }
+        
+        // iOS Style Toggle Switch Functionality
+        function updateToggleState() {
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            
+            if (isDarkMode) {
+                themeToggle.classList.add('on');
+                toggleLabel.textContent = 'iOS Style ON';
+            } else {
+                themeToggle.classList.remove('on');
+                toggleLabel.textContent = 'iOS Style';
+            }
+        }
+        
+        // Dark Mode Toggle
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            updateToggleState();
+        });
+        
+        // Lock/Unlock Button Events
+        lockButton.addEventListener('click', function() {
+            const isLocked = localStorage.getItem('websiteLocked');
+            if (isLocked === 'true') {
+                unlockWebsite();
+            } else {
+                lockWebsite();
+            }
+        });
+        
+        unlockButton.addEventListener('click', unlockWebsite);
+        
+        // All Filters Button Events
+        allFiltersBtn.addEventListener('click', toggleIOSMenu);
+        
+        iosMenuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                selectIOSMenuItem(this);
+            });
+        });
+        
+        // iOS-style Render Prompt Cards for specific device
+        function renderDevicePrompts(container, deviceFilter) {
+            container.innerHTML = '';
+            const filteredPrompts = prompts.filter(prompt => prompt.device === deviceFilter);
+            
+            filteredPrompts.forEach((prompt, index) => {
+                const promptCard = document.createElement('div');
+                promptCard.className = `prompt-card ${prompt.device}`;
+                promptCard.setAttribute('data-type', prompt.type);
+                promptCard.setAttribute('data-device', prompt.device);
+                
+                // Device display name
+                let deviceDisplayName = prompt.device.charAt(0).toUpperCase() + prompt.device.slice(1);
+                if (prompt.device === 'iphone-15') {
+                    deviceDisplayName = 'iPhone 15 Pro Max';
+                } else if (prompt.device === 'samsung') {
+                    deviceDisplayName = 'Samsung S25 Ultra';
+                }
+                
+                promptCard.innerHTML = `
+                    <div class="prompt-header">
+                        <span class="prompt-type ${prompt.device}">${deviceDisplayName}</span>
+                    </div>
+                    <h3 class="prompt-title">${prompt.title}</h3>
+                    <p class="prompt-text">${prompt.text}</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" data-id="${prompt.id}">
+                            <i class="far fa-copy"></i>
+                            <span>Copy Prompt</span>
+                        </button>
+                    </div>
+                `;
+                
+                container.appendChild(promptCard);
+                
+                // iOS-style staggered animation
+                promptCard.style.animationDelay = `${(index % 8) * 0.1}s`;
+            });
+            
+            // Add copy functionality with iOS-style animation
+            container.querySelectorAll('.copy-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = this.getAttribute('data-id');
+                    const prompt = prompts.find(p => p.id == id);
+                    
+                    navigator.clipboard.writeText(prompt.text).then(() => {
+                        const originalIcon = this.querySelector('i').className;
+                        const originalText = this.querySelector('span').textContent;
+                        
+                        // iOS-style copy animation
+                        this.classList.add('copied');
+                        this.querySelector('i').className = 'fas fa-check';
+                        this.querySelector('span').textContent = 'Copied!';
+                        
+                        // Add haptic feedback if available
+                        if (navigator.vibrate) {
+                            navigator.vibrate(50);
+                        }
+                        
+                        setTimeout(() => {
+                            this.classList.remove('copied');
+                            this.querySelector('i').className = originalIcon;
+                            this.querySelector('span').textContent = originalText;
+                        }, 2000);
+                    });
+                });
+            });
+        }
+        
+        // Apply filter function
+        function applyFilter(filter) {
+            const deviceSections = document.querySelectorAll('.device-section');
+            
+            if (filter === 'all') {
+                deviceSections.forEach(section => {
+                    section.style.display = 'block';
+                });
+                renderDevicePrompts(iphoneContainer, 'iphone');
+                renderDevicePrompts(iphone15Container, 'iphone-15');
+                renderDevicePrompts(samsungContainer, 'samsung');
+                renderDevicePrompts(pixelContainer, 'pixel');
+            } else if (filter === 'iphone') {
+                deviceSections.forEach(section => {
+                    if (section.id.includes('iphone')) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                renderDevicePrompts(iphoneContainer, 'iphone');
+                renderDevicePrompts(iphone15Container, 'iphone-15');
+            } else if (filter === 'iphone-15') {
+                deviceSections.forEach(section => {
+                    if (section.id === 'iphone15-section') {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                renderDevicePrompts(iphone15Container, 'iphone-15');
+            } else if (filter === 'samsung') {
+                deviceSections.forEach(section => {
+                    if (section.id === 'samsung-section') {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                renderDevicePrompts(samsungContainer, 'samsung');
+            } else if (filter === 'pixel') {
+                deviceSections.forEach(section => {
+                    if (section.id === 'pixel-section') {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                renderDevicePrompts(pixelContainer, 'pixel');
+            } else {
+                // Filter by type (vivid, dramatic, portrait)
+                deviceSections.forEach(section => {
+                    section.style.display = 'block';
+                });
+                
+                const filteredPrompts = prompts.filter(prompt => prompt.type === filter);
+                
+                iphoneContainer.innerHTML = '';
+                iphone15Container.innerHTML = '';
+                samsungContainer.innerHTML = '';
+                pixelContainer.innerHTML = '';
+                
+                const iphoneFiltered = filteredPrompts.filter(p => p.device === 'iphone');
+                const iphone15Filtered = filteredPrompts.filter(p => p.device === 'iphone-15');
+                const samsungFiltered = filteredPrompts.filter(p => p.device === 'samsung');
+                const pixelFiltered = filteredPrompts.filter(p => p.device === 'pixel');
+                
+                renderFilteredPrompts(iphoneContainer, iphoneFiltered);
+                renderFilteredPrompts(iphone15Container, iphone15Filtered);
+                renderFilteredPrompts(samsungContainer, samsungFiltered);
+                renderFilteredPrompts(pixelContainer, pixelFiltered);
+                
+                if (iphoneFiltered.length === 0) {
+                    document.getElementById('iphone-section').style.display = 'none';
+                }
+                if (iphone15Filtered.length === 0) {
+                    document.getElementById('iphone15-section').style.display = 'none';
+                }
+                if (samsungFiltered.length === 0) {
+                    document.getElementById('samsung-section').style.display = 'none';
+                }
+                if (pixelFiltered.length === 0) {
+                    document.getElementById('pixel-section').style.display = 'none';
+                }
+            }
+        }
+        
+        // Helper function to render filtered prompts
+        function renderFilteredPrompts(container, filteredPrompts) {
+            filteredPrompts.forEach((prompt, index) => {
+                const promptCard = document.createElement('div');
+                promptCard.className = `prompt-card ${prompt.device}`;
+                promptCard.setAttribute('data-type', prompt.type);
+                promptCard.setAttribute('data-device', prompt.device);
+                
+                // Device display name
+                let deviceDisplayName = prompt.device.charAt(0).toUpperCase() + prompt.device.slice(1);
+                if (prompt.device === 'iphone-15') {
+                    deviceDisplayName = 'iPhone 15 Pro Max';
+                } else if (prompt.device === 'samsung') {
+                    deviceDisplayName = 'Samsung S25 Ultra';
+                }
+                
+                promptCard.innerHTML = `
+                    <div class="prompt-header">
+                        <span class="prompt-type ${prompt.device}">${deviceDisplayName}</span>
+                    </div>
+                    <h3 class="prompt-title">${prompt.title}</h3>
+                    <p class="prompt-text">${prompt.text}</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" data-id="${prompt.id}">
+                            <i class="far fa-copy"></i>
+                            <span>Copy Prompt</span>
+                        </button>
+                    </div>
+                `;
+                
+                container.appendChild(promptCard);
+                
+                // iOS-style staggered animation
+                promptCard.style.animationDelay = `${(index % 8) * 0.1}s`;
+            });
+            
+            // Add copy functionality with iOS-style animation
+            container.querySelectorAll('.copy-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = this.getAttribute('data-id');
+                    const prompt = prompts.find(p => p.id == id);
+                    
+                    navigator.clipboard.writeText(prompt.text).then(() => {
+                        const originalIcon = this.querySelector('i').className;
+                        const originalText = this.querySelector('span').textContent;
+                        
+                        // iOS-style copy animation
+                        this.classList.add('copied');
+                        this.querySelector('i').className = 'fas fa-check';
+                        this.querySelector('span').textContent = 'Copied!';
+                        
+                        // Add haptic feedback if available
+                        if (navigator.vibrate) {
+                            navigator.vibrate(50);
+                        }
+                        
+                        setTimeout(() => {
+                            this.classList.remove('copied');
+                            this.querySelector('i').className = originalIcon;
+                            this.querySelector('span').textContent = originalText;
+                        }, 2000);
+                    });
+                });
+            });
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (iosMenu.classList.contains('active') && 
+                !iosMenu.contains(e.target) && 
+                !allFiltersBtn.contains(e.target)) {
+                toggleIOSMenu();
+            }
+        });
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            applyFilter('all');
+            checkLockState();
+            updateToggleState();
+            
+            const isLocked = localStorage.getItem('websiteLocked');
+            if (isLocked === 'true') {
+                setTimeout(() => {
+                    document.body.classList.add('locked');
+                    lockOverlay.classList.add('active');
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>
